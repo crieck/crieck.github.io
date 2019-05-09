@@ -3,8 +3,6 @@
 
   <head>
 
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,8 +15,8 @@
 
   <body>
       <!-- Navigation -->
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Latitude</a>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="../pages/landing.html"><h1>Latitude</h1></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,70 +25,56 @@
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
                         <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 32px, 0px);">
-                            <a class="dropdown-item" href="#">Temperature</a>
-                            <a class="dropdown-item" href="#">Humidity</a>
-                            <a class="dropdown-item" href="#">Cloudiness</a>
-                            <a class="dropdown-item" href="#">Wind Speed</a>
+                            <a class="dropdown-item" href="../pages/viz-temp.html">Temperature</a>
+                            <a class="dropdown-item" href="../pages/viz-humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="../pages/viz-cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="../pages/viz-windspeed.html">Wind Speed</a>
                         </div>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Comparison</a>
+                          <a class="nav-link" href="../pages/comparison.html">Comparison</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Data</a>
+                          <a class="nav-link" href="../pages/data.html">Data</a>
                         </li>
                     </ul>
                 </div>
-          </nav>
+        </nav>
 
         <!-- Main Content -->
         <br><br>
         <div class="container">
           <div class="row">
             <div class="col">
-              <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
+              <div class="card text-white bg-info mb-3">
+                <div class="card-header"><h2 class="card-title">Summary: Latitude vs. X</h2></div>
                 <div class="card-body">
-                  <h4 class="card-title">Info card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="../pages/viz-temp.html"><img src="../static/images/lat-temp.png" alt="temperature visualization" height="216" width="324" align="left" style="padding: 0px 10px 10px 0px;"></a>
+                  <p class="card-text">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                  <p class="card-text">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included temperature, cloudiness, wind speed and humidity. This site provides the source data and visualizations created as part of the analysis, as well as expectations and descriptions of any trends and correlations witnessed.</p>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
+              <div class="card text-white bg-primary mb-3">
+                <div class="card-header"><h2 class="card-title">Visualizations</h2></div>
                 <div class="card-body">
-                  <h4 class="card-title">Primary card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                  <h4 class="card-title">Primary card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                  <h4 class="card-title">Primary card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                  <h4 class="card-title">Primary card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="row">
+                    <div class="col" align="center">
+                       <a href="../pages/viz-cloudiness.html"><img src="../static/images/lat-cloudiness.png" alt="cloudiness visualization" height="144" width="216" style="padding: 5px 5px 5px 5px;"></a>
+                    </div>
+                    <div class="col" align="center">
+                      <a href="../pages/viz-humidity.html"><img src="../static/images/lat-humidity.png" alt="humidity visualization" height="144" width="216" style="padding: 5px 5px 5px 5px;"></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col" align="center">
+                      <a href="../pages/viz-temp.html"><img src="../static/images/lat-temp.png" alt="temperature visualization" height="144" width="216" style="padding: 5px 5px 5px 5px;"></a>
+                    </div>
+                    <div class="col" align="center">
+                      <a href="../pages/viz-windspeed.html"><img src="../static/images/lat-windspeed.png" alt="windspeed visualization" height="144" width="216" style="padding: 5px 5px 5px 5px;"></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -99,7 +83,7 @@
 
 
         <!-- Fixed Footer -->
-        <div class="d-flex justify-content-center fixed-bottom text-secondary" style="background-color:#033C73"><em>Created in 2019 by Chris Rieck</em></div>
+        <div class="d-flex justify-content-center fixed-bottom text-secondary" style="background-color:#033C73"><em>&copy; 2019 <a href="https://www.linkedin.com/in/chrisrieck/">Chris Rieck</a></em></div>
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
