@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootswatch CSS -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+
+    <title>Latitude</title>
+  </head>
+
+  <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="../pages/landing.html"><h1>Latitude</h1></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                        <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 32px, 0px);">
+                            <a class="dropdown-item" href="../pages/viz-temp.html">Temperature</a>
+                            <a class="dropdown-item" href="../pages/viz-humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="../pages/viz-cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="../pages/viz-windspeed.html">Wind Speed</a>
+                        </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../pages/comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../pages/data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+
+        <!-- Main Content -->
+        <br><br>
+        <div class="container">
+          <div class="card border-primary mb-3" style="max-width: 200rem;">
+            <div class="card-header"><h3 align="center">Comparison Latitude vs. X</h3></div>
+            <div class="card-body">
+              <p class="card-text" align="center">Click on a plot to see further info.</p>
+              <div class="row">
+                <div class="col">
+                  <div class="container" align="center">
+                    <h5>vs. Temperature</h5>
+                    <a href="../pages/viz-temp.html"><img src="../static/images/lat-temp.png" alt="temperature visualization" height="216" width="324" style="padding: 5px 5px 5px 5px;"></a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container" align="center">
+                    <h5>vs. Humidity</h5>
+                    <a href="../pages/viz-humidity.html"><img src="../static/images/lat-humidity.png" alt="humidity visualization" height="216" width="324" style="padding: 5px 5px 5px 5px;"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="container" align="center">
+                    <h5>vs. Cloudiness</h5>
+                    <a href="../pages/viz-cloudiness.html"><img src="../static/images/lat-cloudiness.png" alt="cloudiness visualization" height="216" width="324" style="padding: 5px 5px 5px 5px;"></a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container" align="center">
+                    <h5>vs. Wind Speed</h5>
+                    <a href="../pages/viz-windspeed.html"><img src="../static/images/lat-windspeed.png" alt="wind speed visualization" height="216" width="324" style="padding: 5px 5px 5px 5px;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fixed Footer -->
+        <div class="d-flex justify-content-center fixed-bottom text-secondary" style="background-color:#033C73"><em>&copy; 2019 <a href="https://www.linkedin.com/in/chrisrieck/">Chris Rieck</a></em></div>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
